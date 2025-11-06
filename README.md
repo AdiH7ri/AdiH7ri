@@ -22,7 +22,7 @@
   <li>🧠 Passionate about <strong>Computer Vision</strong>, <strong>Multimodal AI</strong>, and <strong>Real-time Video Analytics</strong>.</li>
   <li>💡 Hands-on with <strong>Vision Transformers, CLIP, SAM, LSTMs</strong> and <strong>Edge Optimization</strong>.</li>
   <li>🛠️ Fluent in <strong>Python, C++, Embedded C</strong> and more.</li>
-  <li>📍 Currently in <strong>Sweden</strong>, open to collaborations and deeptech opportunities.</li>
+  <li>📍 Open to collaborations and deeptech opportunities.</li>
 </ul>
 
 ---
@@ -41,8 +41,9 @@
 
 - 🔍 Building real-time multimodal ML pipelines
 - ⚡ Optimizing vision models for edge deployment
-- 📊 Scaling ML for healthcare and robotics
-- 📚 Exploring Reinforcement Learning and Distributed Systems
+- 📊 Scaling ML for healthcare
+- 📚 Exploring Reinforcement Learning, Robotics, Rust programming
+- 📖 Reading in depth about Neuroscience, Brain anatomy and Evolutionary Algorithms
 
 ---
 
