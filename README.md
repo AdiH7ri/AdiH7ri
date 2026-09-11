@@ -24,13 +24,13 @@ Previously, I was a Research Engineer in the **Department of Surgical Sciences (
 ## Technical Competencies
 
 ### Machine Learning & Deep Learning
-- **Frameworks**: PyTorch, TorchVision, nnU-Net, Scikit-learn, Hugging Face
-- **Architectures**: Vision Transformers (ViT, Swin), Diffusion Models, Continuous Flow Matching (CFM), Convolutional Neural Networks, Deep Q-Networks (RL), Recurrent Models (LSTM)
+- **Frameworks & Libraries**: PyTorch, TorchVision, nnU-Net, Scikit-learn, Hugging Face, SHAP (Explainable AI), Pandas
+- **Architectures**: Vision Transformers (ViT, Swin), DenseNet, Diffusion Models, Continuous Flow Matching (CFM), Convolutional Neural Networks, Deep Q-Networks (RL), Recurrent Models (LSTM)
 - **Problem Formulations**: Inverse Problems, Image Restoration & Super-Resolution, Multi-Modal Alignment, Semantic Segmentation, Out-of-Distribution Generalization
 
 ### Medical Image Computing & Spatial Processing
-- **Neuroimaging Suites**: FreeSurfer, FastSurfer, CAT12, SPM, 3D Slicer
-- **Scientific Libraries**: NiBabel, SimpleITK, PyVista, OpenCV, Scikit-image, NumPy, SciPy
+- **Neuroimaging Suites**: FreeSurfer, FastSurfer, 3D Slicer
+- **Scientific & Multimodal Libraries**: NiBabel, SimpleITK, PyVista, OpenCV, OpenFace, OpenSMILE, Librosa, Scikit-image, NumPy, SciPy
 - **Data Formats & Pipelines**: DICOM ingestion, NIfTI volume processing, 3D surface mesh generation, k-space signal processing, skull-stripping workflows
 
 ### Distributed Systems, HPC & MLOps
@@ -38,7 +38,7 @@ Previously, I was a Research Engineer in the **Department of Surgical Sciences (
 - **Developer Tools**: Linux / Unix environments, Docker containerization, Git version control, MLflow experiment tracking, Shell scripting
 
 ### Languages
-- **Core Languages**: Python, C++, C, MATLAB, Bash, SQL
+- **Core Languages**: Python, C++, C, Embedded C, MATLAB, Bash, SQL
 
 ---
 
@@ -51,49 +51,41 @@ Previously, I was a Research Engineer in the **Department of Surgical Sciences (
 - *Technologies*: Python, PyTorch, SLURM, Distributed Data Parallel (DDP), CUDA, NiBabel.
 
 ### Automated Clinical Segmentation & Hydrocephalus Biomarker Pipeline
-- Developed an end-to-end quantitative neuroimaging pipeline (cDESH & cDESH-nn) for the automated assessment of idiopathic Normal Pressure Hydrocephalus (iNPH).
-- Trained specialized nnU-Net architectures to segment key ventricular and subarachnoid regions, calculating volumetric indices (Sylvian fissure to vertex convexity ratios) to support clinical prognosis.
-- Integrated vertex-wise 3D mesh morphometry using PyVista surface smoothing to extract geometric biomarkers from lateral ventricle reconstructions.
-- *Technologies*: Python, PyTorch, nnU-Net, FreeSurfer, FastSurfer, PyVista, NumPy, SciPy.
+- Developed an end-to-end quantitative neuroimaging pipeline (cDESH & cDESH-nn) for the automated assessment of idiopathic Normal Pressure Hydrocephalus (iNPH) from 3T MRI NIfTI scans.
+- Trained specialized U-Net / nnU-Net architectures to segment key ventricular and subarachnoid regions, performing landmark-based volumetric quantification (Sylvian fissure to convexity volume ratios).
+- Integrated vertex-wise 3D mesh morphometry using PyVista surface smoothing to extract geometric biomarkers, evaluating feature importance with SHAP and achieving a balanced test accuracy of 95%.
+- *Technologies*: Python, PyTorch, nnU-Net, FreeSurfer, FastSurfer, PyVista, SHAP, NumPy, SciPy.
 
 ### 3D PET/CT Medical Data Ingestion & Diagnostic Pipeline
-- Built an automated DICOM parsing and extraction pipeline for multimodal 3D PET/CT patient datasets in collaboration with Uppsala University Radiology.
-- Implemented clinical rule engines for scan selection, spatial volume registration, and generation of maximum intensity projections for diagnostic validation.
-- *Technologies*: Python, PyTorch, 3D Slicer, Pydicom, SimpleITK.
+- Built an automated clinical DICOM ingestion and extraction pipeline for multimodal 3D PET/CT patient datasets in collaboration with Uppsala University Radiology.
+- Implemented clinical rule engines for examination filtering, spatial volume registration, and generated 2D projections via SimpleITK for multi-channel proof-of-concept modeling using DenseNet.
+- *Technologies*: Python, PyTorch, DenseNet, 3D Slicer, Pydicom, SimpleITK.
 
 ### Multimodal Behavioral & Dyadic Interaction Analytics
-- Developed a multimodal machine learning framework analyzing synchronized audio, facial action units, and visual body language cues to quantify human interaction and rapport.
-- Investigated multimodal fusion paradigms and temporal modeling techniques for affective computing and human-robot interaction within the Uppsala Social Robotics Lab.
-- *Technologies*: Python, PyTorch, OpenCV, Multimodal Signal Processing.
-
-### Deep Reinforcement Learning for Environment Control
-- Implemented Deep Q-Networks (DQN) from first principles to solve continuous and visual control environments (CartPole, Atari Pong).
-- Built custom frame-stacking wrappers to preserve temporal velocity representations and integrated convolutional perception backbones for visual policy learning.
-- *Technologies*: Python, PyTorch, Gymnasium.
-
-### High-Speed Network Packet Processing & Anomaly Detection
-- Engineered a real-time network packet analysis tool using `libpcap` (C++) and PF_RING for packet capture and feature extraction.
-- Trained unsupervised anomaly detection models (One-Class SVM, Isolation Forests, Gaussian Mixture Models) to identify malicious traffic with low-latency execution.
-- *Technologies*: C++, libpcap, PF_RING, Python, Scikit-learn.
+- Constructed a multimodal machine learning framework analyzing synchronized video and acoustic streams to quantify rapport and emotional alignment in dyadic child-child interactions (Master's thesis at USRL).
+- Extracted facial action units, head pose, and gaze dynamics with OpenFace, alongside acoustic prosodic features using OpenSMILE and Librosa; evaluated CNN-LSTM encoder-decoders and classical ensembles.
+- *Technologies*: Python, PyTorch, OpenFace, OpenSMILE, Librosa, OpenCV, Scikit-learn.
 
 ---
 
 ## Experience
 
 ### Sudha Gopalakrishnan Brain Centre (SGBC), IIT Madras
-**Project Associate (AI / ML Researcher)**
+**Project Associate (AI / ML Researcher)** | May 2026 – Present
 - Developing novel deep learning models for accelerated MRI reconstruction and high-resolution neuroimaging.
 - Implementing generative modeling paradigms (Continuous Flow Matching, Diffusion Models) for brain image restoration.
 - Managing large-scale distributed training jobs across multi-GPU nodes on the PARAM supercomputer via SLURM.
 
 ### Department of Surgical Sciences (Neuroradiology), Uppsala University
-**Research Engineer**
-- Researched quantitative imaging biomarkers and deep learning algorithms for neurodegenerative conditions.
-- Engineered automated segmentation pipelines (nnU-Net) and 3D surface mesh morphometry tools for clinical research cohorts.
+**Research Engineer (Part-time)** | October 2024 – March 2025
+- Engineered an end-to-end ML pipeline extracting morphological features from 3T brain MRI NIfTI volumes for classifying iNPH, achieving a 95% balanced test accuracy with SHAP explainability.
+- Developed automated pipelines for DESH pattern quantification using landmark-based volumetric ROI extraction and U-Net / nnU-Net segmentation.
+- Conducted 3D vertex-wise shape analysis of lateral ventricles using FreeSurfer/FastSurfer segmentations and PyVista mesh smoothing.
 
 ### Wipro Technologies
-**Project Engineer (ML Engineer)**
-- Developed data preprocessing pipelines and deep learning models for time-series forecasting and enterprise analytics.
+**Project Engineer (ML Engineer)** | July 2021 – May 2022
+- Engineered multi-year time-series preprocessing and feature engineering pipelines for enterprise revenue forecasting.
+- Researched and integrated Transformer architectures into deep neural forecasting models, improving test prediction accuracy by up to 10%.
 
 ---
 
