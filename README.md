@@ -81,7 +81,7 @@ Previously, I was a Research Engineer in the **Department of Surgical Sciences (
 ## Experience
 
 ### Sudha Gopalakrishnan Brain Centre (SGBC), IIT Madras
-**Project Associate (AI Researcher)**
+**Project Associate (AI / ML Researcher)**
 - Developing novel deep learning models for accelerated MRI reconstruction and high-resolution neuroimaging.
 - Implementing generative modeling paradigms (Continuous Flow Matching, Diffusion Models) for brain image restoration.
 - Managing large-scale distributed training jobs across multi-GPU nodes on the PARAM supercomputer via SLURM.
@@ -92,7 +92,7 @@ Previously, I was a Research Engineer in the **Department of Surgical Sciences (
 - Engineered automated segmentation pipelines (nnU-Net) and 3D surface mesh morphometry tools for clinical research cohorts.
 
 ### Wipro Technologies
-**Project Engineer**
+**Project Engineer (ML Engineer)**
 - Developed data preprocessing pipelines and deep learning models for time-series forecasting and enterprise analytics.
 
 ---
